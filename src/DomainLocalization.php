@@ -78,9 +78,7 @@ class DomainLocalization
     public function getCurrentLocale(): string
     {
         /** @var string */
-        $configuredLocale = call_user_func(static::$localeGetter);
-
-        return $configuredLocale;
+        return call_user_func(static::$localeGetter);
     }
 
     /**
