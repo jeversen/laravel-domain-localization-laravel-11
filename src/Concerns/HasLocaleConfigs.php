@@ -49,7 +49,7 @@ trait HasLocaleConfigs
      *
      * @param string $key
      *
-     * @throws \Kevindierkx\LaravelDomainLocalization\Exceptions\UnsupportedLocaleException
+     * @throws UnsupportedLocaleException
      *
      * @return array
      */
@@ -192,7 +192,7 @@ trait HasLocaleConfigs
      *
      * @param string $tld
      *
-     * @throws \Kevindierkx\LaravelDomainLocalization\Exceptions\UnsupportedLocaleException
+     * @throws UnsupportedLocaleException
      *
      * @return string
      */
@@ -218,7 +218,7 @@ trait HasLocaleConfigs
      *
      * @param string $tld
      *
-     * @throws \Kevindierkx\LaravelDomainLocalization\Exceptions\UnsupportedLocaleException
+     * @throws UnsupportedLocaleException
      *
      * @return array
      */

@@ -102,7 +102,7 @@ class DomainLocalization
      *
      * @param string $url
      *
-     * @throws \Kevindierkx\LaravelDomainLocalization\Exceptions\InvalidUrlException
+     * @throws InvalidUrlException
      *
      * @return string
      */
@@ -179,11 +179,11 @@ class DomainLocalization
      * @param string      $url
      * @param string|null $key
      *
-     * @throws \Kevindierkx\LaravelDomainLocalization\Exceptions\UnsupportedLocaleException
+     * @throws UnsupportedLocaleException
      *
      * @return string
      */
-    public function getLocalizedUrl(string $url, string $key = null): string
+    public function getLocalizedUrl(string $url, ?string $key = null): string
     {
         $key = $key ?: $this->getDefaultLocale();
 
