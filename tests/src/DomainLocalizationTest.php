@@ -69,7 +69,7 @@ class DomainLocalizationTest extends TestCase
         self::assertSame($method->invokeArgs($this->app['domain.localization'], [$a, $b]) >= 0, $isPositive);
     }
 
-    public function getCompareDataProvider(): array
+    public static function getCompareDataProvider(): array
     {
         return [
             ['.dev',     '.com.dev', true],
